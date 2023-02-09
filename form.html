@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms....</title>
+    </head>
+
+    <body>
+    <form id="form-id-new" action="">
+        <!-- Id should be unique-->
+        <!-- GUID = Globally unique ID  OR UUID = Universally Unique ID-->
+        <!-- Useful for when you're generating a lot of objects, GUID generates 64 bit strings-->
+        <!-- not readable by humans, don't pronounce it-->
+        <label for="First input">First Name:</label>
+        <br/>
+        <input id="first-name-id" name="First Input" type="text" value="Jon" required>
+        <!--Type is what makes input more than a textbox. Can also have color types, etc.-->
+        <br/>
+        <label>Password</label>
+        <br/>
+        <input name="Password" type="password">
+        <br/>
+        <!--
+        <input name="secret" type="hidden" value="some secret">don't tell</input>
+        -->
+        <input name="SessionID" type="hidden" value="c466faa6-e73e-4f11-ab7a-b6ff21d70589"/>
+        <br/>
+        <label>Favorite Color: </label>
+        <input name="Favorite Color" type="color"/>
+        <input type="submit"/>
+        
+    </form>
+</body>
+</html>
+
+<!--
+    BEFORE SUBMIT
+    http://127.0.0.1:5500/form.html
+    
+    AFTER SUBMIT
+    http://127.0.0.1:5500/form.html?First+Input=Jon
+    http://127.0.0.1:5500/form.html?First+Input=Jon&Password=asdasd
+    http://127.0.0.1:5500/form.html?First+Input=Jon&Password=sfdfd&SessionID=c466faa6-e73e-4f11-ab7a-b6ff21d70589
+    http://127.0.0.1:5500/form.html?First+Input=Jon&Password=hereismyfavoritecolor&SessionID=c466faa6-e73e-4f11-ab7a-b6ff21d70589&Favorite+Color=%231988cc
+    
+-->
+
+<!--
+    string x = "hello world";
+    string xx = "hello \"there\" world\\people";
+-->

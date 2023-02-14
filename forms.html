@@ -1,0 +1,54 @@
+<!DOCTYPE xhtml>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <label for="quote">quote: </label>
+            <br/>
+            <input id="quote" name="quote" placeholder="neither hope nor fear"/>
+            <br/>
+
+            <label for="author">author: </label>
+            <br/>
+            <input id="author" name="author" type="text" placeholder="voltaire"/>
+            <br/>
+
+            <label for="phone">phone number: </label>
+            <br/>
+            <input type="tel" id="phone" name="phone" type="text" placeholder="867-5309" 
+                pattern="[0-9]{3}-[0-9]{4}"/>
+            <br/>
+
+            <label for="birthday">birthday: </label>
+            <br/>
+            <input type="date" id="birthday" name="birthday" placeholder="1955-11-05"/>
+            
+            <fieldset>
+                <legend>Status</legend>
+                <input type="radio" id="alive" name="status" value="alive"/>
+                <label for="alive">alive</label>
+                <br/>
+                <input type="radio" id="dead" name="status" value="dead"/>
+                <label for="dead">dead</label>
+                <br/>
+                <input type="radio" id="undead" name="status" value="undead"/>
+                <label for="undead">undead</label>
+                <br/>
+                <input type="radio" id="undefined" name="status" value="undefined"/>
+                <label for="undefined">undefined</label>
+            </fieldset>
+
+            <input type="checkbox" id="verify" name="verify" value="true"/>
+            <label id="verify">Needs Verificiation</label>
+            <br/>
+
+            <input type="submit"/>
+            <input type="reset"/>
+            <br/>
+
+            <input type="image" alt="Submit" src="assets/save"/>
+        </form>
+    </body>
+</html>

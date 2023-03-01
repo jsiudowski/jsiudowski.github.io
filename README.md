@@ -8,3 +8,9 @@ The more I expect, the more unhappy I am going to be. The more I accept, the mor
 
 I think the saddest people always try their hardest to make people happy. Because they know what it feels like to feel absolutely worthless and they don't want anybody else to feel like that.  
 -- Robin Williams
+
+[The Cartoon Character List](cartoonsPage/cartoons.html)
+
+[New User Form](newuser.html)
+
+[References](references.html)

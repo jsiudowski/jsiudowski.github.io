@@ -2,8 +2,8 @@
     <head>
         <title>JavaScript Demo</title>
         <script>
-            // include your code here
-
+            // include your code here, DRY = Don't Repeat Yourself
+            // DOM = Document Object Model, maps to the structure of the HTML document
             /*
                 this code gets loaded before the body
 
@@ -16,10 +16,15 @@
         </br>
         <button onclick="DoSomethingElse()">Click Me First And Third!</button>
         </br>
-        Enter a value: <input id="input"></input><button onclick="loop()">Compute Hailstone</button>
+        Enter a value: <input id="input"></input>
+        <button onclick="loop()">Compute Hailstone</button>
         <script>
+            // Scripts at bottom allow UI to load faster and seem to load instantly
+
             // "use strict"; not allowed to implicitly dictate global variable
+            // must explicitly dictate global variables
             // prevents you from making human errors
+            "use strict";
             alert("Hello World");
             function DoSomething() {
                 alert("foo");

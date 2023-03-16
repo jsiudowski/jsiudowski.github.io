@@ -18,6 +18,11 @@
         </br>
         Enter a value: <input id="input"></input>
         <button onclick="loop()">Compute Hailstone</button>
+        <br/>
+        <image id="carl" src="assets/carlWheezer.jpg" width="500" height="800">Carl Wheezer</image>
+        <br/>
+        <button id="btnBigger" onclick="handleBigger()">Bigger</button>
+        <button id="btnSmaller" onclick="handleSmaller()">Smaller</button>
         <script>
             // Scripts at bottom allow UI to load faster and seem to load instantly
 
@@ -48,6 +53,38 @@
                         x = 3*x + 1;
                 }
                 return count;
+            }
+
+            // document.getElementById("carl").onclick = changePicture;
+            document.getElementById("btnBigger").onclick = handleBigger;
+            document.getElementById("btnSmaller").onclick = handleSmaller;
+            document.getElementById("carl").addEventListener("click",changePicture);
+
+            function changePicture(event) {
+
+                console.log(event.currentTarget.tagName);
+                if(event.currentTarget.src == "assets/carlWheezer.jpg") event.currentTarget.src = "assets/coolCarlWheezer.jpg";
+                else
+                    event.currentTarget.src = "assets/carlWheezer.jpg";
+
+            }
+
+            function handleSmaller(event) {
+
+                console.log(event.currentTarget.tagName);
+                const image = document.getElementById("carl");
+                image.width = 100;
+                image.height = 100;
+
+            }
+
+            function handleBigger(event) {
+
+                console.log(event.currentTarget.tagName);
+                const image = document.getElementById("carl");
+                image.width = 1024;
+                image.height = 1024;
+
             }
         </script>
     </body>

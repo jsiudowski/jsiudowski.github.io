@@ -19,10 +19,16 @@
         Enter a value: <input id="input"></input>
         <button onclick="loop()">Compute Hailstone</button>
         <br/>
-        <image id="carl" src="assets/carlWheezer.jpg" width="500" height="800">Carl Wheezer</image>
+        <image id="carl" src="assets/carlWheezer.jpg" width="500" height="500">Carl Wheezer</image>
         <br/>
         <button id="btnBigger" onclick="handleBigger()">Bigger</button>
         <button id="btnSmaller" onclick="handleSmaller()">Smaller</button>
+        <br/>
+        <button id="btnAddSomething">Add Something</button>
+        <div id="my-div"></div>
+        <div id="remove-button-div">
+            <button id="btnRemoveSomething">Remove Something</button>
+        </div>
         <script>
             // Scripts at bottom allow UI to load faster and seem to load instantly
 
@@ -59,6 +65,22 @@
             document.getElementById("btnBigger").onclick = handleBigger;
             document.getElementById("btnSmaller").onclick = handleSmaller;
             document.getElementById("carl").addEventListener("click",changePicture);
+            document.getElementById("btnAddSomething").addEventListener("click", addSomethingHandler);
+            document.getElementById("btnRemoveSomething").addEventListener("click", removeSomethingHandler);
+
+            function addSomethingHandler(event) 
+            {
+                var newP = document.createElement("p");
+                var myDiv = document.getElementById("my-div");
+                myDiv.appendChild(newP);
+            }
+
+            function removeSomethingHandler(event) 
+            {
+                var addButton = document.getElementById("btnRemoveSomething");
+                var div = document.getElementById("remove-button-div");
+                div.removeChild(addButton);
+            }
 
             function changePicture(event) {
 

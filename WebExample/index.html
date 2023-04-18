@@ -1,0 +1,31 @@
+<!--ASCII 8-bits 256 chars, A-Z, 0-9, *?..., [ \n, \t, \l \r, \0,]-->
+<!--UTF-16 = C#, UTF-8 = JAVA, UTF-32-->
+<!--UTF-32 = 2^32 characters that can be used-->
+<!--UTF-16 and UTF-8 = 2^32 characters that can be used-->
+<!--UTF-8 is Internet standard, it's the smallest-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Word Count Web Component</title>
+    </head>
+    <body>
+        <h1>Word Count Rating Widget</h1>
+        <!--article has extra semantics, I expect this to be content that is referenced
+             and able to do things with-->
+        <!--Makes it easier for systems to pull content out of a webpage-->
+        <article contenteditable="">
+            <h2>Sample Heading</h2>
+
+            <p>fjhsdghdshgjdbjabgjbvbsabdg</p>
+
+            <p>dsjgsdjgbabrutheurhsuvjdsv dsjBEUFDJBDSJBFDSBF</p>
+            <!--Magic is in main.js-->
+            <p is="word-count"></p>
+        </article>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>

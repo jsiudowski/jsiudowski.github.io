@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My To-Do List</title>
+  </head>
+  <link rel="stylesheet" href="list.css">
+
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="newItem" placeholder="Add Item">
+    <button onclick="addItem()">Add</button>
+    <ul id="list">
+      <li>Complete homework <button onclick="removeItem(this)">X</button></li>
+    </ul>
+
+    <script>
+      function addItem() {
+        // Input Val
+        var newItem = document.getElementById("newItem").value;
+
+        //Create List
+        var li = document.createElement("li");
+        li.innerText = newItem;
+
+        // X button
+        var button = document.createElement("button");
+        button.innerText = "X";
+        button.onclick = function() {
+          removeItem(this);
+        }
+        li.appendChild(button);
+
+        // Add Val
+        document.getElementById("list").appendChild(li);
+
+        // Clear 
+        document.getElementById("newItem").value = "";
+      }
+
+      function removeItem(item) {
+        // Remove from List
+        item.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>

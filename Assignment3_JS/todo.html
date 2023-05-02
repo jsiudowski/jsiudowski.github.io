@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>This is your ToDo List</title>
+        <link rel="stylesheet" href="todo.css">
+        <style>
+
+        </style>
+
+        <div id="buttonsAndInput">
+            <h1>Welcome To Your TODO List!</h1>
+            <input type="text" id="newItem" name="newItem" placeholder="Enter Next Item Here...">
+            <button id="addBtn" onclick="addItem()">Add</button>
+            <br/>
+            <span id="countNum"></span>
+            <ul id="list">
+                <li>Click X to Delete Task <button onclick="removeItem(this)">X</button></li>
+            </ul>
+        </div>
+
+        <script>
+            function addItem() {
+                // Input Val
+                var newItem = document.getElementById("newItem").value;
+
+                //Create List
+                var li = document.createElement("li");
+                li.innerText = newItem;
+
+                // X button
+                var button = document.createElement("button");
+                button.innerText = "X";
+                button.onclick = function() {
+                removeItem(this);
+                }
+                li.appendChild(button);
+
+                // Add Val
+                document.getElementById("list").appendChild(li);
+
+                // Clear 
+                document.getElementById("newItem").value = "";
+            }
+
+            function removeItem(item) {
+                // Remove from List
+                item.parentElement.remove();
+            }
+
+            function countItems() {
+                var liList = document.getElementById("list").getElementsByTagName("li");
+                var largo = liList.length;
+                largo.toString();
+                var spanToPrint = document.getElementById("countNum");
+                spanToPrint.appendChild(largo);
+            }
+        </script>
+    </head>
+</html>

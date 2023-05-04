@@ -2,11 +2,8 @@
 
 /* Style the "Add" button */
 .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
+    background:aqua;
+    color:crimson;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
@@ -20,7 +17,7 @@
 
 .titles {
     font-size: 36px;
-    color:aqua;
+    color:blue;
 }
 
   /* Remove margins and padding from the list */
@@ -34,7 +31,8 @@ ul {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background:deeppink;
+    color:black;
     font-size: 18px;
     transition: 0.2s;
   
@@ -47,5 +45,16 @@ ul {
 
 #todo-title {
     font-size: 24px;
+}
 
+head {
+  color:darkorange;
+}
+
+body {
+  background-color: lightblue;
+}
+
+#countNum {
+  text-align: left;
 }

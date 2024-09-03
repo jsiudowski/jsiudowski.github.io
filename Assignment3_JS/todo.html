@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is your ToDo List</title>
+        <!--Calls the CSS Styling included-->
+        <link rel="stylesheet" href="todo.css">
+        <style>
+
+        </style>
+
+        <!--There is a header with a welcome and an input box next to an add button-->
+        <div id="buttonsAndInput">
+            <h1 class="titles">Welcome To Your TODO List!</h1>
+            <input type="text" id="newItem" name="newItem" placeholder="Enter Next Item Here...">
+            <button id="addBtn" onclick="addItem()" class="addBtn">Add</button>
+            <br/>
+            
+            <!--Header with the Count of items before the list-->
+            <div>
+                <h3>
+                    Count Of Items:
+                </h3>
+                <p id="countNum"></p>
+            </div>
+            
+            <!--Removes task when you click the X next to each task-->
+            <ul id="list">
+                <li>Click X to Delete Task <button onclick="removeItem(this)">X</button></li>
+            </ul>
+        </div>
+
+        <!--Script at the end of the code to have HTML load first-->
+        <script src="todo.js"></script>
+    </head>
+</html>

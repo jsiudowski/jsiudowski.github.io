@@ -1,0 +1,58 @@
+/* Style the "Add" button */
+.addBtn {
+    background:aqua;
+    color:crimson;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.titles {
+    font-size: 36px;
+    color:blue;
+}
+
+  /* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background:deeppink;
+    color:black;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#todo-title {
+    font-size: 24px;
+}
+
+head {
+  color:darkorange;
+}
+
+body {
+  background-color: lightblue;
+}
+
+#countNum {
+  text-align: left;
+}

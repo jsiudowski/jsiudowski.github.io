@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        New User Form
+    </head>
+    <body>
+    <form id="form-user-new">
+        <label for="First input">First Name:</label>
+        <br/>
+        <input id="first-name-id" name="First Input" type="text" minlength="1" maxlength="32" required>
+        <br/>
+
+        <label for="Second input">Last Name:</label>
+        <br/>
+        <input id="last-name-id" name="Second Input" type="text" minlength="1" maxlength="32" required>
+        <br/>
+
+        <label for="Password">Password:</label>
+        <br/>
+        <input id="password-id" name="Password" type="password" required>
+        <br/>
+
+        <label for="Email">Email:</label>
+        <br/>
+        <input id="email-id" name="Email" type="email" required>
+        <br/>
+
+        <label for="Telephone Number">Telephone Number: (Format XXX-XXX-XXXX)</label>
+        <br/>
+        <input type="tel" id="phone-id" name="telephoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        <br/>
+        <br/>
+
+        <label for="Url">URL for your home page:</label>
+        <br/>
+        <input id="url-id" name="URL" type="url">
+        <br/>
+        <br/>
+
+        <label for="birthday">Birthday (Month and Year): </label>
+        <br/>
+        <input type="month" id="birthday" name="birthday"/>
+        <br/>
+        <br/>
+
+        <input type="checkbox" id="verifyEmail" name="verifyEmail" value="true"/>
+        <label id="verify">Can We Email You?</label>
+        <br/>
+
+        <fieldset>
+            <legend>Can We Text You?</legend>
+            <input type="radio" id="yesText" name="yesText" value="yes"/>
+            <label for="yes">Yes</label>
+            <br/>
+            <input type="radio" id="noText" name="noText" value="no"/>
+            <label for="no">No</label>
+        </fieldset>
+        <br/>
+        
+        <fieldset>
+            <legend>Do You Like Our Products?</legend>
+            <input type="radio" id="one" name="one" value="one"/>
+            <label for="one">1 - Don't Like It</label>
+
+            <input type="radio" id="two" name="two" value="two"/>
+            <label for="two">2 - Somewhat Dislike It</label>
+
+            <input type="radio" id="three" name="three" value="three"/>
+            <label for="three">3 - Neither Like Nor Dislike It</label>
+
+            <input type="radio" id="four" name="four" value="four"/>
+            <label for="four">4 - Like It</label>
+
+            <input type="radio" id="five" name="five" value="five"/>
+            <label for="five">5 - Love It</label>
+        </fieldset>
+        <br/>
+
+        <input type="submit"/>
+        <input type="reset"/>
+        <br/>
+
+    </form>
+</body>
+</html>

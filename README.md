@@ -1,6 +1,6 @@
 # jsiudowski.github.io
 
-[Resume](resume.pdf)
+[Resume](Resume_JonSiudowski_Current_2025_03.docx.pdf)
 
 It’s being here now that’s important. There’s no past and there’s no future. Time is a very misleading thing. All there is ever, is the now. We can gain experience from the past, but we can’t relive it; and we can hope for the future, but we don’t know if there is one.  
 -- George Harrison
